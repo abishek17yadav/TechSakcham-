@@ -1,0 +1,32 @@
+torch
+transformers
+diffusers
+datasets
+PIL
+
+
+Instructions for Running:
+Create the Python Files:
+
+Create generate_image.py, train_model.py, and requirements.txt using any text editor.
+Install Dependencies: Run the following command to install all necessary dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Generate Image: Run generate_image.py by entering a prompt when prompted:
+
+bash
+Copy
+Edit
+python generate_image.py
+Fine-tuning Model (Optional): Run train_model.py to fine-tune the model with your custom dataset:
+
+bash
+Copy
+Edit
+python train_model.py
+Notes:
+The code will check if a GPU is available and use it; otherwise, it defaults to using the CPU.
+Fine-tuning: In train_model.py, replace the fine-tuning part with your specific method (this example assumes you're working with a dataset from Hugging Face). The load_dataset function is a placeholder, so you need to define how the dataset will be loaded, formatted, and used for training.
